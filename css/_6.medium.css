@@ -1,0 +1,10 @@
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .top-bar .col {
+        width: fit-content!important;
+    }
+    .top-bar .container {
+        margin-right: calc(var(--bs-gutter-x)* .5);;
+    }
+}

@@ -83,6 +83,18 @@
 .hero .hero-brown {
     right: -6rem;
 }
+.key-features-section-title .title-contain {
+    padding: 2.5rem 1.5rem;
+    margin-top: -4rem;
+}
+.key-features-section-title h2 {
+    font-size: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.section-title {
+    font-size: 5rem;
+}
 
 }
         

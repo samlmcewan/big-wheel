@@ -358,3 +358,25 @@ a.readmore:hover {
 .key-features {
     background-color: var(--orange);
 }
+.key-features-section-title {
+    position: relative;
+}
+.key-features-section-title .title-contain {
+    padding: 1.25rem 1rem;
+    background-color: var(--black);
+    maring-top: -2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+
+}
+
+.key-features-section-title h2 {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-bottom: 0;
+
+}

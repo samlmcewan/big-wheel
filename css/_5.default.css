@@ -352,3 +352,9 @@ a.readmore:hover {
 .about-us .section-title {
     margin-bottom: 3rem;
 }
+/*--------------------------------------------------------------
+# Key Features
+--------------------------------------------------------------*/
+.key-features {
+    background-color: var(--orange);
+}

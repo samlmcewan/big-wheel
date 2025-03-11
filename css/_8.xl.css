@@ -61,5 +61,28 @@
     width: 20rem;
 }
 
+.hero {
+    height: 40rem;
+}
+
+.hero-text-container {
+    top:8rem;
+}
+
+.hero-text-container .hero-text p {
+    font-size: 3.5rem;
+}
+.hero-text-container .hero-sub p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.hero .btn-outline {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+}
+.hero .hero-brown {
+    right: -6rem;
+}
+
 }
         

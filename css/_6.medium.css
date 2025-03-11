@@ -7,4 +7,26 @@
     .top-bar .container {
         margin-right: calc(var(--bs-gutter-x)* .5);;
     }
+    .hero {
+        height: 28rem;
+    }
+    .hero-text-container .hero-sub {
+        width: 50%;
+        margin-left: auto;
+    }
+    .hero-text-container {
+        top: 2.5rem;
+        right: 2rem;
+        transform: translate(0, 0);
+        width: fit-content;
+    }
+    .hero-text-container .hero-text {
+        width: fit-content;
+    }
+    .hero-text-container .hero-sub {
+        width: 70%;
+    }
+    .hero .hero-brown {
+        right: -4.5rem;
+    }
 }

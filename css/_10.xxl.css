@@ -1,5 +1,10 @@
 /* Extra large devices (large desktops, 1400px and up) */
 
 @media only screen and (min-width: 1400px) {
-    
+    .advertise .section-title {
+        margin-top: 11rem;
+    }
+    .advertise .title-sub {
+        margin-bottom: 14rem;
+    }
 }

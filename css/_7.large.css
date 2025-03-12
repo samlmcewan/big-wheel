@@ -40,4 +40,13 @@
     .section-title h2 {
         font-size: 3.5rem;
     }
+    .get-in-touch p {
+        font-size: 2rem;
+    }
+    .advertise .section-title {
+        margin-top: 7rem;
+    }
+    .advertise .title-sub {
+        margin-bottom: 9rem;
+    }
 }

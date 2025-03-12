@@ -62,7 +62,7 @@
 }
 
 .hero {
-    height: 40rem;
+    height: 50rem;
 }
 
 .hero-text-container {
@@ -70,18 +70,19 @@
 }
 
 .hero-text-container .hero-text p {
-    font-size: 3.5rem;
+    /* font-size: 3.5rem; */
+    font-size: 5rem;
 }
 .hero-text-container .hero-sub p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-}
-.hero .btn-outline {
     font-size: 1.75rem;
     margin-top: 1rem;
 }
+.hero .btn-outline {
+    font-size: 2.3rem;
+    margin-top: 1rem;
+}
 .hero .hero-brown {
-    right: -6rem;
+    right: -8rem;
 }
 .key-features-section-title .title-contain {
     padding: 2.5rem 1.5rem;
@@ -94,6 +95,22 @@
 }
 .section-title {
     font-size: 5rem;
+}
+.get-in-touch .col {
+    padding-left: 4rem!important;
+    padding-right: 4rem!important;
+}
+.get-in-touch p {
+    font-size: 2.5rem;
+}
+.section-title h2 {
+    font-size: 5rem;
+}
+.advertise .section-title {
+    margin-top: 9rem;
+}
+.advertise .title-sub {
+    margin-bottom: 12rem;
 }
 
 }

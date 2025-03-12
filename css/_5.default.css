@@ -34,7 +34,7 @@ section {
 }
 
 .section-title {
-    border: thin solid var(--orange);
+    border: 3px solid var(--orange);
     color: var(--white);
     font-size: 2rem;
     font-weight: 800;
@@ -357,6 +357,7 @@ a.readmore:hover {
 --------------------------------------------------------------*/
 .key-features {
     background-color: var(--orange);
+    position: relative;
 }
 .key-features-section-title {
     position: relative;
@@ -364,7 +365,7 @@ a.readmore:hover {
 .key-features-section-title .title-contain {
     padding: 1.25rem 1rem;
     background-color: var(--black);
-    maring-top: -2rem;
+    margin-top: -2rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -384,6 +385,7 @@ a.readmore:hover {
 .key-features .text-contain {
     background-color: var(--white);
     padding: 1rem;
+    z-index: 9;
 }
 
 .key-features .text-contain .title {
@@ -394,50 +396,31 @@ a.readmore:hover {
     position: relative;
     padding-left: 4rem;
 }
-/* .key-features .text-contain .title::before {
-    content: attr(data-number);
-    position: absolute;
-    top: 50%;
-    left: 0rem;       
-    transform: translateY(-50%);
-    width: 3rem;        
-    height: 3rem;
-    background-color: var(--orange);
-    color: #fff;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0;
-    transform: rotate(-25deg);
-  } */
-   /* 1) Tilted background box */
+.key-features .text-contain .title:not(:first-child) {
+    margin-top: 2rem;
+}
+
 .key-features .text-contain .title::before {
     content: '';
     position: absolute;
     top: 50%;
     left: -0.75rem;
-    /* Move box so its center lines up at the .title’s middle */
     transform: translateY(-55%) rotate(-20deg);
     width: 3.5rem;
     height: 3.5rem;
-    background-color: var(--orange);
-    z-index: 1; /* So the box is behind the text */
+    background-color: var(--lightOrange);
+    z-index: 1;
   }
   
-  /* 2) Upright number on top of the box */
   .key-features .text-contain .title::after {
     content: attr(data-number);
     position: absolute;
     top: 50%;
-    /* Move text to the center of the box (half the box width = 1.5rem) */
     left: 1.5rem;
-    /* Center it exactly over that point */
     transform: translate(-50%, -50%);
     color: #fff;
     font-weight: bold;
-    z-index: 2; /* Above the box */
-    /* Optionally set a font-size, etc. */
+    z-index: 2;
     font-size: 1.2rem; 
   }
 .key-features .text-contain .title h3 {
@@ -448,4 +431,73 @@ a.readmore:hover {
 
 .key-features .text-contain li {
     margin-bottom: .5rem;
+}
+.key-features .second {
+    position: relative;
+}
+.key-features .black-bg {
+    background-color: var(--black);
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.key-features .details p {
+    color: var(--white);
+}
+
+/*--------------------------------------------------------------
+# Get In Touch
+--------------------------------------------------------------*/
+.get-in-touch {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.get-in-touch .col {
+    background-color: var(--lightOrange);
+}
+.get-in-touch p {
+    font-size: 1.5rem;
+}
+
+/*--------------------------------------------------------------
+# Advertise
+--------------------------------------------------------------*/
+.advertise {
+    position: relative;
+    height: fit-content;
+}
+.advertise img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -9;
+}
+.advertise .section-title {
+    background-color: var(--black);
+    margin-bottom: 0;
+    margin-top: 4rem;
+}
+.advertise  .title-sub {
+    background-color: var(--orange);
+    padding: .5rem 2rem;
+    margin-bottom: 8rem;
+}
+.advertise  .title-sub a{
+    color: var(--white);
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
 }

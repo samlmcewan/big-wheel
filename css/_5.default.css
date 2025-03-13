@@ -352,6 +352,7 @@ a.readmore:hover {
 .about-us .section-title {
     margin-bottom: 3rem;
 }
+
 /*--------------------------------------------------------------
 # Key Features
 --------------------------------------------------------------*/
@@ -385,6 +386,7 @@ a.readmore:hover {
 .key-features .text-contain {
     background-color: var(--white);
     padding: 1rem;
+    position: relative;
     z-index: 9;
 }
 
@@ -448,6 +450,22 @@ a.readmore:hover {
 .key-features .details p {
     color: var(--white);
 }
+.key-features .img-contain {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.key-features .img-contain img {
+    position: absolute;
+    right: 0;
+}
+.key-features .img-contain .shape {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    margin-left: -3rem;
+}
 
 /*--------------------------------------------------------------
 # Get In Touch
@@ -489,15 +507,19 @@ a.readmore:hover {
     margin-bottom: 0;
     margin-top: 4rem;
 }
-.advertise  .title-sub {
+.advertise  a.title-sub {
     background-color: var(--orange);
+    border: 3px solid var(--orange);
+    border-top: none;
     padding: .5rem 2rem;
     margin-bottom: 8rem;
-}
-.advertise  .title-sub a{
     color: var(--white);
     font-weight: 400;
     text-decoration: none;
     font-size: 2rem;
     text-transform: uppercase;
+    transition: all .3s;
+}
+.advertise  a.title-sub:hover {
+    background-color: var(--black);
 }

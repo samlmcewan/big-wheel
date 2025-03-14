@@ -38,5 +38,9 @@
         padding-left: .5rem;
         padding-right: .5rem;
     }
+
+    .other-services a.card .title {
+        font-size: 1rem;
+    }
     
 }

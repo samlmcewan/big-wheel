@@ -70,8 +70,8 @@
 }
 
 .hero-text-container .hero-text p {
-    /* font-size: 3.5rem; */
-    font-size: 5rem;
+    font-size: 3.5rem;
+    /* font-size: 5rem; */
 }
 .hero-text-container .hero-sub p {
     font-size: 1.75rem;
@@ -141,6 +141,16 @@
       #footer .footer-title {
         font-size: 1.5rem;
       }
+      footer .logo-footer {
+        width: 100%;
+      }
+      footer .logo-footer img {
+        width: 80%;
+    }
+
+    .other-services a.card .title {
+        font-size: 1.25rem;
+    }
 
 }
         

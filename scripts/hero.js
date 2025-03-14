@@ -12,5 +12,5 @@ document.addEventListener('DOMContentLoaded', function() {
   
     images[current].classList.add('active');
     
-    setInterval(showNextImage, 4000);
+    setInterval(showNextImage, 3000);
   });
